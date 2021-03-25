@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{border:1px solid red; }
+        .box{}
+        .box:after,.box:before{
+            content:' ';
+            display: block;
+            clear: both;
+        }
+        .left{float: left;}
+        .right{float: right;}
+        .down{}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="clear"></div>
+    <div class="down">down</div>
+</body>
+</html>

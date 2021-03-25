@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .myfontcolor{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-bottom:100px;">
+        <br><br>
+        <div class="alert">abc</div>
+        <div class="alert" style="border:1px solid red">abc</div>
+        <div class="alert alert-default">abc</div>
+        <div class="alert alert-primary">abc</div>
+        <div class="alert alert-info">abc</div>
+        <div class="alert alert-success">abc</div>
+        <div class="alert alert-danger">abc</div>
+        <div class="alert alert-warning">abc</div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">面板标题</div>
+                    <div class="panel-body">body</div>
+                    <div class="panel-footer">
+                        footer
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-4">
+                <div id="login" class="panel panel-primary">
+                    <div class="panel-heading">
+                        百度登录
+                    </div>
+                    <div class="panel-body">
+                        <form class="form-group" action="a.php" id="data">
+                            <label for=""></label>
+                            <input type="text" name="user" class="form-control">
+                            <div class="alert alert-warning" style="padding: 5px">用户名不能为空</div>
+                            <input type="password" name="pw" class="form-control">
+                        </form>
+                        <input type="checkbox" checked>
+                        <label for="">下次自动登录</label>
+                        <a href="" class="text-primary">忘记密码</a>
+                        <input type="submit" value="登录" class="btn btn-primary pull-right btn-block" form="data">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <a href="">按钮链接</a>
+                <button class="btn btn-default btn-block btn-lg">按钮链接</button>
+                <button class="btn btn-default btn-block btn-lg active">按钮链接</button>
+                <button class="btn btn-default btn-block btn-lg disabled">按钮链接</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

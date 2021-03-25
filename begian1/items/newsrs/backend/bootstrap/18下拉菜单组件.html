@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .mydrop{animation: fade 0.5s linear;}
+        @keyframes fade{
+            from{opacity: 0; transform: translateY(-20px);}
+            to{opacity: 1; transform:translateY(0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="row">
+           <div class="col-lg-4" style="border:1px solid red;">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >
+                        Dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+           </div>
+           <div class="col-lg-4" style="border:1px solid red;">
+                <div class="dropdown open">
+                    <a href="#" class="btn btn-block btn-primary dropdown-toggle" data-toggle="dropdown">
+                        前端开发
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" style="left:50px; width: 300px;">
+                        <li><a href="">html</a></li>
+                        <li><a href="">css</a></li>
+                        <li><a href="">bootstrap</a></li>
+                    </ul>
+                </div>
+           </div>
+           <div class="col-lg-4" style="border:1px solid red;">
+               <div class="dropdown">
+                   <a href="" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown">
+                       前端开发
+                       <span class="caret"></span>
+                   </a>
+                   <ul class="dropdown-menu dropdown-menu-right btn-block">
+                       <li><a href="">HTML</a></li>
+                       <li><a href="">CSS</a></li>
+                       <li><a href="">JS</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       <div style="height: 200px;"></div>
+       <div class="row">
+           <div class="col-lg-4">
+            <div class="dropdown">
+                <a href="" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown">
+                    前端开发
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right btn-block">
+                    <li class="dropdown-header">基础知识</li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">框架知识</li>
+                    <li><a href="">jquery</a></li>
+                    <li><a href="">bootstrap</a></li>
+                </ul>
+            </div>
+           </div>
+           <div class="col-lg-4">
+            <div class="dropdown">
+                <a href="" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown">
+                    前端开发
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu btn-block mydrop">
+                    <li class="dropdown-header">基础知识</li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">框架知识</li>
+                    <li><a href="">jquery</a></li>
+                    <li><a href="">bootstrap</a></li>
+                </ul>
+            </div>
+           </div>
+           <div class="col-lg-4">
+            <div class="dropdown" id="yourdrop">
+                <a href="" class="dropdown-toggle btn btn-default btn-block" data-toggle="dropdown" id="mybtn">
+                    前端开发
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu btn-block" id="mydrop2">
+                    <li class="dropdown-header">基础知识</li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JS</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">框架知识</li>
+                    <li><a href="">jquery</a></li>
+                    <li><a href="">bootstrap</a></li>
+                </ul>
+            </div>
+           </div>
+       </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        /* $("#mybtn").mouseover(function(){
+            $("#yourdrop").addClass("open");
+        })
+        $("#mybtn").mouseout(function(){
+            $("#yourdrop").removeClass("open");
+        }) */
+        if(window.navigator.userAgent.toLowerCase().indexOf("mobile")==-1)
+        {
+            var timer=null;
+            $("#mybtn").hover(function(){
+                clearTimeout(timer);
+                $("#yourdrop").addClass("open");
+            },function(){
+                timer=setTimeout(function(){
+                    $("#yourdrop").removeClass("open");
+                },200);
+            });
+            $("#mydrop2").hover(function(){
+                clearTimeout(timer);
+            },function(){
+                timer=setTimeout(function(){
+                    $("#yourdrop").removeClass("open");
+                },200);
+            })
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,63 @@
+*{margin:0;padding:0;font-family:'微软雅黑';}
+li{list-style:none;}
+a{text-decoration:none;color:#313031;}
+a:hover{cursor:pointer;}
+img{border:none;vertical-align:middle;}
+input,button,a {outline:0 none !important;blr:expression(this.onFocus=this.blur());}
+/*固定顶部导航*/
+.Dbtop{width:100%;height:70px;overflow:hidden;box-shadow:0 3px 5px #dcdcde;
+    border-top:1px solid #dcdcde;box-sizing:border-box;position:fixed;z-index:11;top:0;
+    background: #ffffff;}
+.Dbtop div{width:1000px;height:70px;line-height:70px;margin:auto;}
+.Dbtop div>img{height:48px;float:left;padding-top:11px; }
+.Dbtop div .DH{margin-left:432px;}
+.Dbtop div .DH a{font-size:16px;margin-left:40px;height:66px;float:left;color:#333;}
+.Dbtop div .DH a.DJ{width:32px;margin-left:0;
+    height:66px;display:block;}
+.Dbtop div .DH a.DJ2{font-weight:bold;border-bottom:3px solid #ffbd27;}
+.Dbtop div .DH a:hover{color:#ffbd27;border-bottom:3px solid #ffbd27;}
+/*下载中间部分*/
+.download div.down{height:640px;margin:70px auto 0;background:url(../images/f1.png) center;
+    background-size:cover;/*animation:myFirst-01 2s ease-out 1s backwards;*/max-width:1350px;}
+.download div.down>div{width:1000px;height:640px;position:relative;margin:auto;}
+.download div.down div .load{display:inline-block;height:24px;font-size:18px;
+    margin-top:50px;margin-left:45px;}
+.download div.down div .load img{display:inline-block;margin-top:-5px;}
+.download div.down div .load2{line-height:45px;position:absolute;right:200px;bottom:175px;}
+.download div.down div>img{position:absolute;right:60px;bottom:195px;}
+.download div.down div .load2 p:hover{background:#333;color:#ffbd27;}
+.download div.down div .load2 p{width:185px;height:45px;border:2px solid #333;top:-5px;
+    position:relative;margin-bottom:16px;}
+.download div.down div .load2 p i{width:25px;color:#7a5309;position:absolute;top:5px;left:10px;
+    text-align:center;}
+.download div.down div .load2 p:hover i{color:#ffbd27;}
+.download div.down div .load2 p span{position: absolute;top:0px;right:10px;}
+.download div.down2{height:640px;background:url(../images/f2.png) center;
+    background-size:cover;/*animation:myFirst-01 2s ease-out 1s backwards;*/
+    border-bottom:1px solid #ffbd27;max-width:1350px;margin:auto;}
+.download{animation:myFirst-01 2s backwards;}
+.download div.down div .load{animation:myFirst-01 1s 2s backwards;}
+.download div.down div .load2{animation:myFirst-01 1s 3s backwards;}
+.download div.down div>img{animation:myFirst-01 1s 4s backwards;}
+@keyframes myFirst-01 {
+    0%{opacity:0;transform:translateY(200px)}
+    100%{opacity:1;transform:translateY(0px)}
+}
+/*底部栏目*/
+.bottom{width:100%;height:287px;background:#333;}
+.bottom>div{width:1000px;margin:auto;color:#aaaaaa;font-size:14px;padding-top:75px;}
+.bottom div .ZleFt{float:left;margin-left:60px;}
+.bottom div .ZleFt a{display:block;margin-bottom:24px;color:#aaaaaa;}
+.bottom div .ZleFt a:hover{color:#fff;}
+.bottom div .BTRight{float:right;margin-right:70px;}
+.bottom div .BTRight .BTRp2{font-size:22px;color:#fff;margin-bottom:20px;}
+.bottom div .BTRight .BTRp{margin-bottom:16px;}
+.bottom div .BTRight .BTRp3{font-size:22px;color:#fff;margin:20px auto 21px;}
+.bottom div .BTRight2{float:right;}
+.bottom div .BTRight2 .btrP{font-size:24px;color:#fff;margin-bottom:24px;}
+.bottom div .BTRight2 .btrP2{float:left;}
+.bottom div .BTRight2 .btrP3{float:right;}
+.bottom2{width:100%;height:72px;background:#333;border-top:1px solid #666;}
+.bottom2 div{width:1000px;height:69px;text-align:center;margin:auto;}
+.bottom2 div p{font-size:12px;color:#aaa;line-height:71px;}
+.bottom2 div p img{padding-left:20px;display: inline-block;margin-top:-3px;}

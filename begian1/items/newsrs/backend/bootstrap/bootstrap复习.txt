@@ -1,0 +1,148 @@
+display:none;
+display:block;
+display:inline;
+display:inline-block;
+display:flex;
+display:grid;
+display:table;
+display:item;
+display:list;
+
+
+overflow:visible;
+overflow:hidden;
+overflow:auto;
+overflow:scroll;
+
+
+visibility:hidden;
+visibility:visible;
+
+div  span
+
+
+b   i    strong   em
+
+
+.container
+.row
+.col-*-number
+.col-*-offset-number
+.col-*-push-number
+.col-*-pull-number
+.pull-left
+.pull-right
+.clearfix
+.visible-*-block
+.visible-*-inline
+.visible-*-inline-block
+.hidden-*
+
+hidden-print
+visible-print-block
+visible-print-inline
+visible-print-inline-block
+
+1.模板
+2.栅格系统
+容器：container   container-fluid
+row  col-lg-number   col-md-number    col-sm-number    col-xs-number
+
+3.   1200   992   768
+
+     1170   970   750    auto
+
+4.   col-device-offset-number
+
+5.   col-device-push-number
+     col-device-pull-number
+
+6.   pull-right   pull-left
+
+7.   列嵌套
+
+8.   affix
+
+9.   clearfix
+
+10.   visible-lg-block   visible-lg-inline  visible-lg-inline-block
+     hidden-lg
+
+visible-print-block  visible-print-inline   visible-print-inline-block
+
+hidden-print
+
+
+
+default
+primary
+success
+
+info
+danger
+warning
+
+*-default
+
+*=text
+*=bg
+*=btn
+*=panel
+*=alert
+*=label
+
+form-group   form-control
+
+btn-block  btn-lg   btn-md   btn-sm   btn-xs   btn-link
+
+active   disabled
+
+
+
+
+btn-group
+btn-group-justified
+
+btn-group-vertical
+
+btn-group-lg   btn-group-md   btn-group-sm   btn-group-xs
+
+caret   dropup(必须放在按钮组的结构中)
+
+
+github   代码托管
+
+git      版本控制
+
+
+dropdown
+dropdown-toggle
+dropdown-menu
+
+data-toggle="dropdown"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+*{margin:0;padding:0;font-family:'微软雅黑';}
+li{list-style:none;}
+a{text-decoration:none;color:#313031;}
+a:hover{cursor:pointer;}
+img{border:none;vertical-align:middle;}
+input,button,a {outline:0 none !important;blr:expression(this.onFocus=this.blur());}
+/*固定顶部导航*/
+.Dbtop{width:100%;height:70px;overflow:hidden;box-shadow:0 3px 5px #dcdcde;
+    border-top:1px solid #dcdcde;box-sizing:border-box;position:fixed;z-index:11;top:0;
+    background: #ffffff;}
+.Dbtop div{width:1000px;height:70px;line-height:70px;margin:auto;}
+.Dbtop div>img{height:48px;float:left;padding-top:11px; }
+.Dbtop div .DH{margin-left:432px;}
+.Dbtop div .DH a{font-size:16px;margin-left:40px;height:66px;float:left;color:#333;}
+.Dbtop div .DH a.DJ{width:32px;margin-left:0;
+    height:66px;display:block;}
+.Dbtop div .DH a.DJ2{font-weight:bold;border-bottom:3px solid #ffbd27;}
+.Dbtop div .DH a:hover{color:#ffbd27;border-bottom:3px solid #ffbd27;}
+/*社会责任中间部分*/
+/*中间-1*/
+.agency{width:1000px;height:340px;margin:170px auto 100px;}
+.agency .AY{float:left;}
+.agency .AY2{float:right;font-size:12px;color:#333;}
+.agency .AY2 p{width:320px;max-width:320px;overflow:hidden;text-overflow:ellipsis;
+    white-space:nowrap;margin-bottom:16px;cursor: pointer;}
+.agency .AY2 p:hover{color:#ffbd27;}
+.agency .AY2 p.PY span{display:inline-block;float: right;}
+.agency .AY2 p.PY{margin-bottom:8px;}
+.agency .AY2 p.PY2{border:1px solid #333;margin-bottom:5px;}
+.agency .AY2 p i{margin-right:5px;}
+/*中间-2*/
+.Meeting{width:1000px;height:90px;margin:0 auto 66px;}
+.Meeting .MG{font-size:40px;color:#333;}
+.Meeting .MG2{width:230px;height:0px;border-bottom:18px solid #ffbd27;margin-top:-18px;}
+.Meeting .MG3{font-size:24px;margin-left:30px;}
+/*中间-3*/
+.let{width:1000px;height:270px;margin:0 auto 60px;}
+.let>div{width:270px;height:270px;background:url(../images/d5.png) no-repeat;background-size:270px;
+    float:left;border-radius:50%;font-size:12px;}
+.let div:nth-child(2){margin:0 90px;}
+.let div p{max-width:210px;}
+.let div .LT{display:inline-block;margin-top:78px;font-size:28px;margin-left:52px;}
+.let div .LT2{width:90px;height:6px;background:#ffbd27;margin-top:13px;
+    margin-left:90px;margin-bottom:15px;}
+.let div .LT3{margin-left:33px;}
+/*中间-4*/
+.Sociology{width:1000px;height:498px;margin:0 auto 88px;}
+.bilIty{width:788px;height:635px;margin:0 auto 40px;}
+.Agency{animation:myFirst-01 2s backwards;}
+@keyframes myFirst-01 {
+    0%{opacity:0;transform:translateY(200px)}
+    100%{opacity:1;transform:translateY(0px)}
+}
+/*底部栏目*/
+.bottom{width:100%;height:287px;background:#333;}
+.bottom>div{width:1000px;margin:auto;color:#aaaaaa;font-size:14px;padding-top:75px;}
+.bottom div .ZleFt{float:left;margin-left:60px;}
+.bottom div .ZleFt a{display:block;margin-bottom:24px;color:#aaaaaa;}
+.bottom div .ZleFt a:hover{color:#fff;}
+.bottom div .BTRight{float:right;margin-right:70px;}
+.bottom div .BTRight .BTRp2{font-size:22px;color:#fff;margin-bottom:20px;}
+.bottom div .BTRight .BTRp{margin-bottom:16px;}
+.bottom div .BTRight .BTRp3{font-size:22px;color:#fff;margin:20px auto 21px;}
+.bottom div .BTRight2{float:right;}
+.bottom div .BTRight2 .btrP{font-size:24px;color:#fff;margin-bottom:24px;}
+.bottom div .BTRight2 .btrP2{float:left;}
+.bottom div .BTRight2 .btrP3{float:right;}
+.bottom2{width:100%;height:72px;background:#333;border-top:1px solid #666;}
+.bottom2 div{width:1000px;height:69px;text-align:center;margin:auto;}
+.bottom2 div p{font-size:12px;color:#aaa;line-height:71px;}
+.bottom2 div p img{padding-left:20px;display: inline-block;margin-top:-3px;}
